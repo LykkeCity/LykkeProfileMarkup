@@ -32,6 +32,15 @@
 @import '../../node_modules/LykkeFramework/assets/scss/partials/popover';
 
 // optional
+@import 'partials/blocks/markets';
+@import 'partials/blocks/support';
+@import 'partials/blocks/subscribe';
+@import 'partials/blocks/footer';
+@import 'partials/blocks/nav';
+@import 'partials/blocks/lists';
+
 @import 'pages/profile';
+@import 'pages/auth';
 @import 'partials/forms';
 @import 'partials/modal';
+@import 'partials/apps';

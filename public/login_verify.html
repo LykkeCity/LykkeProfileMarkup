@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lykke - anyone can trade</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/vendor/bootstrap-custom.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lte IE 9]>
+      <script type="text/javascript" src="js/vendor/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<article class="content page page_auth">
+
+  <section class="section section--padding">
+    <div class="container">
+
+        <div class="row">
+          <div class="col-md-10 automargin">
+            <div class="header__logo header_logo">
+              <a href="/">
+                <img class="header_logo__img" src="img/lykke_new.svg" height="40" alt="lykke_logo">
+              </a>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="section_header">
+                  <div class="section_title">Discover the future of markets</div>
+                  <div class="section_subtitle">You will use this login information to access all Lykke products and services</div>
+                </div>
+
+                <div class="logos">
+                  <img src="img/lykke_wallet_logo.svg" alt="lykke wallet" width="40" height="40">
+                  <img src="img/streams_logo.svg" alt="streams" width="40" height="40">
+                  <img src="img/bl_explorer_logo.svg" alt="blockchain explorer" width="40" height="40">
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <span class="hint_accent">Step 1 of 3</span>
+                <h4>Verify e-mail</h4>
+                <p class="lead">Please enter the verification code we sent to your  e-mail address.</p>
+                <form class="form form_register">
+                  <div class="form-group">
+                    <input type="text" placeholder="Code" class="form-control">
+                    <button type="button" class="btn btn--flat">Resend the code</button>
+                  </div>
+                  <div class="submit-group">
+                    <button class="btn btn--primary btn-block" type="submit">Submit</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+  </section>
+
+
+</article>
+
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/fastclick.min.js"></script>
+<script src="js/functions.js"></script>
+
+<script src="js/vendor/moment.min.js"></script>
+<script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
+
+<script>
+  $('.datetimepicker').datetimepicker({
+    format: 'DD.MM.YYYY',
+    icons: {
+      time: "icon--clock",
+      date: "icon--cal",
+      up: "icon--chevron-thin-up",
+      down: "icon--chevron-thin-down",
+      previous: "icon--chevron-thin-left",
+      next: "icon--chevron-thin-right"
+    }
+  });
+</script>
+
+</body>
+</html>

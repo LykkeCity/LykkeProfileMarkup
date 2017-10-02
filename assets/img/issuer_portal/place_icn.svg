@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="62px" height="73px" viewBox="0 0 62 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-1.11022302e-14%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#20D330" offset="0%"></stop>
+            <stop stop-color="#13B72A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="profile/04b_KYC_country_of_residence" transform="translate(-879.000000, -956.000000)">
+            <g id="Group-5" transform="translate(880.000000, 957.000000)">
+                <g id="company_icn">
+                    <g id="token_design_icn-copy">
+                        <g id="token_design_icn">
+                            <g id="comisssion_free_icn">
+                                <path d="M30,70 C30,70 60,54.140625 60,29.75 C60,13.3195287 46.5685425,0 30,0 C13.4314575,0 8.62351033e-16,13.3195287 0,29.75 C0,53.5783691 30,70 30,70 Z" id="Oval-5-Copy-4" stroke="#333333" stroke-width="2"></path>
+                                <ellipse id="Oval-5-Copy-6" fill="url(#linearGradient-1)" cx="30" cy="30" rx="25" ry="25"></ellipse>
+                                <ellipse id="Oval-5-Copy-6" stroke="#FFFFFF" stroke-width="2" cx="30" cy="30" rx="10" ry="10"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

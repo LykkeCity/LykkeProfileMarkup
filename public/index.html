@@ -170,19 +170,21 @@
   </header>
 </div>
 
-<nav class="header_nav">
-  <div class="header_nav__inner">
-    <div class="container">
-      <ul class="header_nav__list nav_list">
-        <li class="nav_list__item"><a href="">Exchange</a></li>
-        <li class="nav_list__item"><a href="">Community</a></li>
-        <li class="nav_list__item"><a href="">Company</a></li>
-      </ul>
+<div class="header_nav_container">
+  <nav class="header_nav">
+    <div class="header_nav__inner">
+      <div class="container">
+        <ul class="header_nav__list nav_list">
+          <li class="nav_list__item"><a href="">Exchange</a></li>
+          <li class="nav_list__item"><a href="">Community</a></li>
+          <li class="nav_list__item"><a href="">Company</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
 
-<article class="content page page--profile">
+<article class="content page page_profile">
 
   <section class="section section--padding">
     <div class="container container--extend">
@@ -221,10 +223,12 @@
 
                 <fieldset class="form_fieldset">
                   <div class="form_header">
+                    <div class="form_header__content">
+                      <!-- TODO add "disabled" if "Edit" clicked-->
 
-                    <!-- TODO add "disabled" if clicked-->
-                    <button type="button" class="btn btn-sm pull-right">Edit</button>
-                    <h3>Profile</h3>
+                      <button type="button" class="btn btn-sm pull-right">Edit</button>
+                      <h3>Profile</h3>
+                    </div>
                   </div>
 
                   <div class="form-group">
@@ -305,8 +309,10 @@
 
                 <fieldset class="form_fieldset">
                   <div class="form_header">
-                    <h3>Access to Lykke Services</h3>
-                    <p class="text-muted">Use your data profile in other Lykke Services</p>
+                    <div class="form_header__content">
+                      <h3>Access to Lykke Services</h3>
+                      <p class="text-muted">Use your data profile in other Lykke Services</p>
+                    </div>
                   </div>
 
                   <div class="asset_link_list asset_link_list--alt">
@@ -360,8 +366,10 @@
 
                 <fieldset class="form_fieldset">
                   <div class="form_header">
-                    <h3>Social</h3>
-                    <p class="text-muted">Use your data profile in other Lykke Services</p>
+                    <div class="form_header__content">
+                      <h3>Social</h3>
+                      <p class="text-muted">Use your data profile in other Lykke Services</p>
+                    </div>
                   </div>
 
                   <div class="asset_link_list asset_link_list--alt">
@@ -447,8 +455,10 @@
 
                 <fieldset class="form_fieldset">
                   <div class="form_header">
-                    <h3>KYC</h3>
-                    <p class="text-muted">Personal information to gain access to all services and functions. You can make transactions, withdraw money from the app Lykke Wallet, etc.</p>
+                    <div class="form_header__content">
+                      <h3>KYC</h3>
+                      <p class="text-muted">Personal information to gain access to all services and functions. You can make transactions, withdraw money from the app Lykke Wallet, etc.</p>
+                    </div>
                   </div>
 
                   <div class="progress_bar">
@@ -480,7 +490,7 @@
                         <div class="asset_link__title">Country of residence</div>
                       </div>
                       <div class="asset_link__action">
-                        <a href="#" class="btn btn-sm btn--default">Enter data</a>
+                        <button type="button" class="btn btn-sm btn--default">Enter data</button>
                       </div>
                     </div>
 
@@ -539,9 +549,11 @@
 
                 <fieldset class="form_fieldset">
                   <div class="form_header">
-                    <h3>Delete account</h3>
-                    <p class="text-muted">Permanently delete your account and all of your content (include Lykke Wallet data).</p>
-                    <button type="button" class="action_link"><i class="icon icon--trash"></i> Delete your account</button>
+                   <div class="form_header__content">
+                     <h3>Delete account</h3>
+                     <p class="text-muted">Permanently delete your account and all of your content (include Lykke Wallet data).</p>
+                     <button type="button" class="action_link"><i class="icon icon--trash"></i> Delete your account</button>
+                   </div>
                   </div>
 
                 </fieldset>
@@ -553,16 +565,19 @@
               <form class="form form--default form_profile">
                 <fieldset class="form_fieldset">
                   <div class="form_header">
-                    <p class="text-muted">All subscriptions will send on e-mail: leroycox@gmail.com</p>
-
-                    <button type="button" class="action_link"><i class="icon icon--settings"></i> Change e-mail</button>
+                    <div class="form_header__content">
+                      <p class="text-muted">All subscriptions will send on e-mail: leroycox@gmail.com</p>
+                      <button type="button" class="action_link"><i class="icon icon--settings"></i> Change e-mail</button>
+                    </div>
                   </div>
                 </fieldset>
 
                 <fieldset class="form_fieldset">
                   <div class="form_header">
-                    <img class="pull-right form_header__img" src="img/logo-lykke.svg" width="50">
-                    <h3>Lykke site</h3>
+                    <div class="form_header__content">
+                      <img class="pull-right form_header__img" src="img/logo-lykke.svg" width="50">
+                      <h3>Lykke site</h3>
+                    </div>
                   </div>
 
                   <div class="asset_link_list asset_link_list--alt">
@@ -607,8 +622,10 @@
 
                 <fieldset class="form_fieldset">
                   <div class="form_header">
-                    <img class="pull-right form_header__img" src="img/streams_logo.svg" width="50">
-                    <h3>Streams</h3>
+                    <div class="form_header__content">
+                      <img class="pull-right form_header__img" src="img/streams_logo.svg" width="50">
+                      <h3>Streams</h3>
+                    </div>
                   </div>
 
                   <div class="asset_link_list asset_link_list--alt">
@@ -653,6 +670,401 @@
 
               </form>
             </div>
+
+            <div role="tabpanel" class="tab-pane" id="kyc">
+              <form class="form form--default form_profile">
+                <fieldset class="form_fieldset">
+                  <div class="form_header">
+                    <div class="form_header__content">
+                      <p class="text-muted">Personal information to gain access to all services and functions. You can make transactions, withdraw money from the app Lykke Wallet, etc.</p>
+                    </div>
+                  </div>
+
+                  <div class="progress_bar">
+                    <div class="progress_bar__label pull-left">Guest</div>
+                    <div class="progress_bar__label pull-right">Citizen</div>
+
+                    <div class="progress_bar__line">
+                      <div class="progress_bar__fill" style="width: 33%"></div>
+                    </div>
+                    <div class="hint">33% filling the data</div>
+                  </div>
+                </fieldset>
+
+
+                <!-- STEP 1 -->
+
+                <fieldset class="form_fieldset">
+                  <div class="form_header form_header--border">
+                    <div class="form_header__icon">
+                      <img src="img/issuer_portal/register_icn.svg" class="pull-right" alt="register">
+                    </div>
+                    <div class="form_header__content">
+                      <span class="hint">Step 1 of 6</span>
+                      <h3>Personal information</h3>
+                      <p class="text-muted">Fill out personal information to gain access to all services. Also enter contact information so that we can contact you if necessary.</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="first_name1" class="control-label">First name</label>
+                        <input type="text" class="form-control" id="first_name1" value="Leroy">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="last_name1" class="control-label">Last name</label>
+                        <input type="text" class="form-control" id="last_name1" value="Cox">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="phone" class="control-label">Phone number</label>
+                        <input type="tel" class="form-control form-control--tel" id="phone">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="birth" class="control-label">Date of birth</label>
+                        <div class="input-group date datetimepicker">
+                          <input type="text" class="form-control" id="birth" value="10.11.2016"/>
+                          <span class="input-group-addon">
+                              <span class="icon icon--cal"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email1" class="control-label">Email</label>
+                    <input type="email" class="form-control" id="email1">
+                  </div>
+
+                  <div class="form_submit">
+                    <button type="button" class="btn btn-block" disabled>Submit</button>
+                  </div>
+                </fieldset>
+
+                <div class="form_nav">
+                  <!--<div class=" form_nav__prev">
+                    <span class="hint">Next</span>
+                    <div class="form_nav__title">Country of Residence</div>
+                  </div>-->
+                  <div class="form_nav__next">
+                    <span class="hint">Next</span>
+                    <div class="form_nav__title">Country of Residence</div>
+                  </div>
+                </div>
+
+
+                <!-- STEP 2 -->
+
+                <fieldset class="form_fieldset">
+                  <div class="form_header form_header--border">
+                    <div class="form_header__icon">
+                      <img src="img/issuer_portal/place_icn.svg" class="pull-right" alt="register" style="margin-top: -20px">
+                    </div>
+                    <div class="form_header__content">
+                      <span class="hint">Step 2 of 6</span>
+                      <h3>Country of Residence</h3>
+                      <p class="text-muted">Specify the place of residence or nationality, so that we can confirm your identity.</p>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="timezone" class="control-label">Country of residence</label>
+                    <div class="select" data-control="select">
+                      <div class="select__value"><span class="_value">United States of America</span></div>
+                      <select id="residence" class="form-control select__elem">
+                        <option>United States of America</option>
+                        <option>Russia</option>
+                        <option>Switzerland</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form_submit">
+                    <button type="button" class="btn btn--yellow btn-block"><i class="icon icon--clock"></i> Data sent for confirmation</button>
+                  </div>
+                </fieldset>
+
+                <div class="form_nav">
+                  <div class=" form_nav__prev">
+                    <span class="hint">Previous</span>
+                    <div class="form_nav__title">Country of Residence</div>
+                  </div>
+                  <div class="form_nav__next">
+                    <span class="hint">Next</span>
+                    <div class="form_nav__title">Address Information</div>
+                  </div>
+                </div>
+
+
+                <!-- STEP 3 -->
+
+                <fieldset class="form_fieldset">
+                  <div class="form_header form_header--border">
+                    <div class="form_header__icon">
+                      <img src="img/issuer_portal/register_icn.svg" class="pull-right" alt="register">
+                    </div>
+                    <div class="form_header__content">
+                      <span class="hint">Step 3 of 6</span>
+                      <h3>Address Information</h3>
+                      <p class="text-muted">Enter the details of your residence.</p>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="city" class="control-label">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="Los Angeles">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="address" class="control-label">Address</label>
+                    <input type="text" class="form-control" id="address">
+                  </div>
+
+                  <div class="form_header">
+                    <div class="form_header__content">
+                      <h5>Documents</h5>
+                    </div>
+                  </div>
+
+                  <div class="asset_link_list asset_link_list--alt">
+                    <div class="asset_link">
+                      <div class="asset_link__info">
+                        <div class="asset_link__title">Colour copy of passport or ID</div>
+                        <div class="asset_link__desc">Allowed files type: jpg, pdf ⋅ File must be less than 3MB</div>
+                      </div>
+                      <div class="asset_link__action">
+                        <button type="button" class="btn btn-sm btn--default">Upload file</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form_submit">
+                    <button type="button" class="btn btn-block">Submit</button>
+                  </div>
+
+                </fieldset>
+
+                <div class="form_nav">
+                  <div class=" form_nav__prev">
+                    <span class="hint">Previous</span>
+                    <div class="form_nav__title">Country of Residence</div>
+                  </div>
+                  <div class="form_nav__next">
+                    <span class="hint">Next</span>
+                    <div class="form_nav__title">Proof of Address</div>
+                  </div>
+                </div>
+
+
+                <!-- STEP 4 -->
+
+                <fieldset class="form_fieldset">
+                  <div class="form_header form_header--border">
+                    <div class="form_header__icon">
+                      <img src="img/issuer_portal/register_icn.svg" class="pull-right" alt="register">
+                    </div>
+                    <div class="form_header__content">
+                      <span class="hint">Step 4 of 6</span>
+                      <h3>Proof of Address</h3>
+                      <p class="text-muted">Confirm your place of residence, so that we can allow you to work with the service.</p>
+                    </div>
+                  </div>
+
+                  <div class="form_header">
+                    <div class="form_header__content">
+                      <h5>Documents</h5>
+                      <p class="text-muted">Allowed files type: pdf, png, jpg ⋅ File must be less than 3MB</p>
+                    </div>
+                  </div>
+
+                  <div class="asset_link_list asset_link_list--alt">
+                    <div class="asset_link">
+                      <div class="asset_link__info">
+                        <div class="asset_link__title">Proof of Address</div>
+                        <div class="asset_link__desc">eg. Bank statement/Utility Bill</div>
+                      </div>
+                      <div class="asset_link__action">
+                        <div class="asset_preview">
+                          <div class="asset_link__icon">
+                            <div class="asset_icon asset_icon--red">PDF</div>
+                          </div>
+                          <div class="asset_preview__info">
+                            <div class="asset_preview__title">proof_of_address.pdf</div>
+                            <button class="btn btn--link" type="button">upload another file</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="asset_link">
+                      <div class="asset_link__info">
+                        <div class="asset_link__title">Proof of Address</div>
+                        <div class="asset_link__desc">eg. Bank statement /Utility Bill – not older than 3 months</div>
+                      </div>
+                      <div class="asset_link__action">
+                        <button type="button" class="btn btn-sm btn--default">Upload file</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form_submit">
+                    <button type="button" class="btn btn-block">Submit</button>
+                  </div>
+
+                </fieldset>
+
+                <div class="form_nav">
+                  <div class=" form_nav__prev">
+                    <span class="hint">Previous</span>
+                    <div class="form_nav__title">Proof of Address</div>
+                  </div>
+                  <div class="form_nav__next form_nav--disabled">
+                    <span class="hint">Next</span>
+                    <div class="form_nav__title">Additional Documents</div>
+                  </div>
+                </div>
+
+
+                <!-- STEP 5 -->
+
+                <fieldset class="form_fieldset">
+                  <div class="form_header form_header--border">
+                    <div class="form_header__icon">
+                      <img src="img/issuer_portal/register_icn.svg" class="pull-right" alt="register">
+                    </div>
+                    <div class="form_header__content">
+                      <span class="hint">Step 5 of 6</span>
+                      <h3>Bank Account Info</h3>
+                      <p class="text-muted">Confirm your employment, the availability of sufficient funds in your bank account.</p>
+                    </div>
+                  </div>
+
+                  <div class="form_header">
+                    <div class="form_header__content">
+                      <h5>Documents</h5>
+                      <p class="text-muted">Allowed files type: pdf, png, jpg ⋅ File must be less than 3MB</p>
+                    </div>
+                  </div>
+
+                  <div class="asset_link_list asset_link_list--alt">
+                    <div class="asset_link">
+                      <div class="asset_link__info">
+                        <div class="asset_link__title">Proof of funds</div>
+                        <div class="asset_link__desc">i.e. Proof of employment – 3 salary slips not older than 3 months</div>
+                      </div>
+                      <div class="asset_link__action">
+                        <button type="button" class="btn btn-sm btn--default">Upload file</button>
+                      </div>
+                    </div>
+                    <div class="asset_link">
+                      <div class="asset_link__info">
+                        <div class="asset_link__title">Bank account info</div>
+                        <div class="asset_link__desc">e.g. 3 Bank statement – last 3 months</div>
+                      </div>
+                      <div class="asset_link__action">
+                        <button type="button" class="btn btn-sm btn--default">Upload file</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form_submit">
+                    <button type="button" class="btn btn-block">Submit</button>
+                  </div>
+
+                </fieldset>
+
+                <div class="form_nav">
+                  <div class=" form_nav__prev">
+                    <span class="hint">Previous</span>
+                    <div class="form_nav__title">Proof of Address</div>
+                  </div>
+                  <div class="form_nav__next">
+                    <span class="hint">Next</span>
+                    <div class="form_nav__title">Additional Documents</div>
+                  </div>
+                </div>
+
+
+                <!-- STEP 6 -->
+
+                <fieldset class="form_fieldset">
+                  <div class="form_header form_header--border">
+                    <div class="form_header__icon">
+                      <img src="img/issuer_portal/register_icn.svg" class="pull-right" alt="register">
+                    </div>
+                    <div class="form_header__content">
+                      <span class="hint">Step 6 of 6</span>
+                      <h3>Additional Documents</h3>
+                      <p class="text-muted">Add more documents to complete their profile.</p>
+                    </div>
+                  </div>
+
+                  <div class="form_header">
+                    <div class="form_header__button pull-right">
+                      <button class="btn btn-sm" type="button">Add file</button>
+                    </div>
+                    <div class="form_header__content">
+                      <h5>Documents</h5>
+                      <p class="text-muted">Allowed files type: pdf, png, jpg ⋅ File must be less than 3MB</p>
+                    </div>
+                  </div>
+
+                  <div class="asset_link_list asset_link_list--alt">
+                    <div class="asset_link_list">
+                      <div class="asset_link asset_link--alt">
+                        <div class="asset_link__icon">
+                          <div class="asset_icon asset_icon--red">PDF</div>
+                        </div>
+                        <div class="asset_link__info">
+                          <div class="asset_link__title"><a href="">Brief and concept.pdf</a></div>
+                          <div class="asset_link__desc">24.8MB</div>
+                        </div>
+                        <div class="asset_link__action">
+                          <button class="btn btn--icon _rename_asset" data-toggle="modal" data-target="#modal_rename_project"><i class="icon icon--rename_icn"></i></button>
+                          <button class="btn btn--icon _delete_asset"><i class="icon icon--trash"></i></button>
+                        </div>
+                      </div>
+                      <div class="asset_link asset_link--alt">
+                        <div class="asset_link__icon">
+                          <div class="asset_icon asset_icon--yellow">PNG</div>
+                        </div>
+                        <div class="asset_link__info">
+                          <div class="asset_link__title"><a href="">logo.png</a></div>
+                          <div class="asset_link__desc">10KB</div>
+                        </div>
+                        <div class="asset_link__action">
+                          <button class="btn btn--icon _rename_asset" data-toggle="modal" data-target="#modal_rename_project"><i class="icon icon--rename_icn"></i></button>
+                          <button class="btn btn--icon _delete_asset"><i class="icon icon--trash"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form_submit">
+                    <button type="button" class="btn btn-block">Submit registration</button>
+                  </div>
+
+                </fieldset>
+
+                <div class="form_nav">
+                  <div class=" form_nav__prev">
+                    <span class="hint">Previous</span>
+                    <div class="form_nav__title">Proof of Address</div>
+                  </div>
+                </div>
+
+              </form>
+
+            </div>
           </div>
         </div>
       </div>
@@ -663,38 +1075,186 @@
 </article>
 
 <footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="separator"></div>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="apps apps--left">
+
+            <div class="apps_apple">
+              <a
+                href="https://appsto.re/ru/Dwjvcb.i"
+                class="app_link app_link--appstore"
+                title="App Store"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <img src="img/appstore-badge.svg" width="170" alt="apps_apple">
+              </a>
+
+            </div>
+            <div class="apps_google">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.lykkex.LykkeWallet"
+                class="app_link app_link--googleplay"
+                title="Google Play"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <img src="img/google-play.svg" width="170" alt="apps_google">
+              </a>
+            </div>
+          </div>
+
+          <div class="block_subscribe">
+            <h5 class="block_subscribe__title">Newsletter</h5>
+            <p class="hint">Get our latest news right in your mailbox</p>
+
+            <form class="form" id="subscribe-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <i class="icon icon--email"></i>
+                  <input type="email" placeholder="E-mail address" id="subscribe-email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Wrong email format">
+                </div>
+                <div id="subscribe-message" class="hint" style="display:none"></div>
+                <button class="btn btn-sm btn--primary btn--circle" type="button" id="subscribe-button"><i class="icon icon--arrow-right-alt"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-7">
+          <div class="footer_nav">
+            <div class="footer_nav__row">
+              <div class="footer_nav__col">
+                <menu class="nav nav--list">
+                  <li class="nav__title">Services</li>
+                  <li><a href="https://streams.lykke.com/" target="_blank">Lykke Streams</a></li>
+                  <li><a href="https://blockchainexplorer.lykke.com/" target="_blank">Blockchain Explorer</a></li>
+                </menu>
+              </div>
+              <div class="footer_nav__col">
+                <menu class="nav nav--list">
+                  <li class="nav__title">For clients</li>
+                  <li><a href="https://lykke.com/city/invest" target="_blank">Invest</a></li>
+                  <li><a href="https://lykke.com" target="_blank">Wallet</a></li>
+                  <li><a href="https://lykke.com/exchange" target="_blank">Exchange</a></li>
+                  <li><a href="https://lykke.com/b2b" target="_blank">Accelerator</a></li>
+                  <li><a href="https://lykke.com/city/faq" target="_blank">FAQ</a></li>
+                </menu>
+              </div>
+              <div class="footer_nav__col">
+                <menu class="nav nav--list">
+                  <li class="nav__title">About us</li>
+                  <li><a href="https://lykke.com/leadership" target="_blank">Core team</a></li>
+                  <li><a href="https://lykke.com/technology" target="_blank">Technology</a></li>
+                  <li><a href="https://lykke.com/company/news" target="_blank">News</a></li>
+                  <li><a href="https://lykke.com/city/blog" target="_blank">Blog</a></li>
+                  <li><a href="https://lykke.com/media/Whitepaper_LykkeExchange.pdf" target="_blank">White Paper</a></li>
+                </menu>
+              </div>
+              <div class="footer_nav__col">
+                <menu class="nav nav--list">
+                  <li class="nav__title">Get in touch</li>
+                  <li><a href="https://lykke.com/contacts" target="_blank">Contacts</a></li>
+                  <li><a href="mailto:support@lykke.com">Support</a></li>
+                  <li><a href="https://lykke.com/city/open_positions" target="_blank">Open positions</a></li>
+                  <li><a href="https://lykke.com/b2b-join" target="_blank">Join as Blockchain Accelerator</a></li>
+                </menu>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="footer__bottom">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-6 text-right pull-right">
-          <div class="clearfix">
-            <ul class="social social--footer_alt">
-              <li><a href="https://lykke.com/" target="_blank"><i class="icon icon--lykke"></i></a></li>
-              <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i></a></li>
-              <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon icon--tw"></i></a></li>
-              <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon icon--instagram"></i></a></li>
-              <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon icon--youtube"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item"><i class="icon icon--linkedin-icn"></i></a></li>
-              <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item"><i class="icon icon--reddit"></i></a></li>
-              <li><a href="https://telegram.me/joinchat/AEGiqkF-_dNaHMwQbRSnAg" target="_blank" class="social__item"><i class="icon icon--telegram"></i></a></li>
-            </ul>
-          </div>
+        <div class="col-xs-12 col-sm-7 pull-right">
+          <ul class="social social--footer_alt">
+            <li><a href="https://www.facebook.com/LykkeCity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--fb_simple"></i></a></li>
+            <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--tw"></i></a></li>
+            <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/c/LykkeX" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--linkedin-icn"></i></a></li>
+            <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--reddit"></i></a></li>
+            <li><a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--telegram"></i></a></li>
+            <li><a href="http://lykkecommunity.herokuapp.com" target="_blank" class="social__item" rel="noopener noreferrer"><i class="icon icon--slack"></i></a></li>
+          </ul>
         </div>
-        <div class="col-xs-12 col-md-6 text-left">
-          <div class="footer__copy">&copy; Lykke 2016. All rights reserved
-            <span class="middot">&middot;</span>
-            <a href="">Terms of Use</a>
-          </div>
+        <div class="col-xs-12 col-sm-5">
+          <ul class="footer_links">
+            <li><span class="copy">© 2017 Lykke, Inc.</span></li>
+            <li class="middot">·</li>
+            <li><a href="https://lykke.com/privacy_policy" target="_blank">Privacy Policy</a></li>
+            <li class="middot">·</li>
+            <li><a href="https://lykke.com/terms_of_use" target="_blank">Terms of Use</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </footer>
 
+<!-- Modal -->
+<div class="modal modal--rename_asset fade" id="modal_rename_project" tabindex="-1" role="dialog">
+
+  <div class="modal_valign">
+    <div class="modal_valign__row">
+      <div class="modal_valign__cell">
+
+        <div class="modal__dialog" role="document">
+          <div class="modal__content">
+            <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            <div class="modal__body">
+              <h3>Rename</h3>
+              <div class="text">
+                <p>Please enter a new name for the item:</p>
+
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" class="form-control">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <button type="button" class="btn btn--flat" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn" data-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/functions.js"></script>
+
+<script src="js/vendor/moment.min.js"></script>
+<script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
+
+<script>
+  $('.datetimepicker').datetimepicker({
+    format: 'DD.MM.YYYY',
+    icons: {
+      time: "icon--clock",
+      date: "icon--cal",
+      up: "icon--chevron-thin-up",
+      down: "icon--chevron-thin-down",
+      previous: "icon--chevron-thin-left",
+      next: "icon--chevron-thin-right"
+    }
+  });
+</script>
 
 </body>
 </html>

@@ -584,10 +584,14 @@
 .asset_link_list {
   margin: 0;
 
-  @include rem(margin-bottom, 20px);
+  @include rem(margin-bottom, 24px);
 
   .asset_link {
-    @include rem(padding, 25px 0 20px);
+    @include rem(padding, 25px 0);
+
+    &__desc {
+      line-height: normal;
+    }
   }
 
   &--alt {
@@ -693,6 +697,10 @@
 
       @include rem(width, 40px);
     }
+
+    .btn + .btn {
+      @include rem(margin-left, 15px)
+    }
   }
 
   &__count {
@@ -739,10 +747,56 @@
     margin-bottom: 0;
   }
 
+  &--alt {
+    .asset_link__desc {
+      margin-top: 0;
+    }
+  }
+
   @media all and (min-width: $screen-landscape) and (max-width: $screen-tablet) {
     &__extend {
       .form-control {
         margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.icon--rename_icn:before {
+  font-size: 95%;
+}
+
+.modal {
+  &--rename_asset {
+    .modal__dialog {
+      @include rem(width, 570px);
+
+      max-width: 100%;
+    }
+
+    .modal__body {
+      @include rem(padding-bottom, 10px);
+    }
+
+    h3 {
+      @include rem(margin-bottom, 5px);
+    }
+
+    .text p {
+      @include rem(margin-bottom, 15px);
+    }
+
+    .modal__footer {
+      text-align: right;
+
+      .btn {
+        vertical-align: middle;
+
+        @include rem(min-width, 120px);
+
+        &--flat {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -916,4 +970,14 @@
 
 .text--green {
   color: $green !important;
+}
+
+.datetimepicker {
+  .btn--icon {
+    color: #B2B8BF;
+  }
+}
+
+.input-group-addon {
+  color: #B2B8BF;
 }

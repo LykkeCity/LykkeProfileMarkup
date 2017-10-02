@@ -131,14 +131,20 @@
 }
 
 .form_header {
+  position: relative;
+
   @include rem(padding, 22px 0 20px);
   @include clearfix;
 
   h5 {
-    line-height: 1.9;
+    line-height: normal;
     margin-bottom: 0;
 
     @include rem(font-size, 21px);
+
+    + p {
+      margin-bottom: 0;
+    }
   }
 
   h3 {
@@ -163,9 +169,50 @@
   .action_link {
     @include rem(margin-top, 10px)
   }
+  
+  .clearfix {
+    img.pull-right {
+      @include rem(margin-left, 40px);
+    }
+    
+    p {
+      overflow: hidden;
+    }
+  }
+
+  .hint {
+    color: rgba($secondary, .6);
+    letter-spacing: 0;
+
+    @include rem(font-size, 16px);
+    @include rem(line-height, 24px);
+  }
 
   &__img {
     @include rem(margin, -5px 0)
+  }
+  
+  &__content {
+    overflow: hidden;
+  }
+
+  &__button {
+    margin-left: 20px;
+  }
+
+  &__icon {
+    right: 0;
+    position: absolute;
+
+    @include rem(bottom, 30px);
+
+    img {
+      @include rem(width, 70px);
+    }
+
+    + .form_header__content {
+      @include rem(padding-right, 140px);
+    }
   }
 
   &__switch {
@@ -451,5 +498,162 @@ textarea.form-control {
 .form_fieldset:first-child {
   .form_header {
     padding-top: 0;
+  }
+}
+
+.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-color: $gray-25;
+
+  &:focus {
+    border-color: $gray-light;
+  }
+}
+
+.hint {
+  line-height: 1.5;
+  color: rgba($secondary, .6);
+
+  @include rem(font-size, 16px);
+}
+
+.form_nav {
+  @include clearfix;
+  @include rem(margin-bottom, 50px);
+  
+  &__next,
+  &__prev {
+    width: 43%;
+    cursor: pointer;
+    position: relative;
+
+    @include rem(padding, 10px 40px);
+
+    &:before {
+      position: absolute;
+      font-family: 'icon' !important;
+      top: 50%;
+      margin-top: -9px;
+      color: $gray-light;
+
+      @include rem(font-size, 18px);
+      @include transition($transition-default)
+    }
+
+    &:hover {
+      &:before {
+        @include scale(1.21)
+      }
+    }
+  }
+
+  &--disabled {
+    opacity: .6;
+    pointer-events: none;
+    cursor: default;
+  }
+  
+  &__next {
+    float: right;
+    padding-left: 0;
+
+
+    &:before {
+      content: "\e929";
+      right: 0;
+    }
+  }
+  
+  &__prev {
+    float: left;
+    text-align: right;
+    padding-right: 0;
+
+    &:before {
+      content: "\e92a";
+      left: 0;
+    }
+  }
+
+  &__title {
+    font-weight: $fw-semi;
+    line-height: 1.67;
+    color: $text;
+
+    @include rem(font-size, 18px);
+  }
+}
+
+.form_register {
+  .input-group-addon {
+    right: auto;
+    margin-right: 0;
+    cursor: default;
+
+    @include rem(font-size, 24px);
+    @include rem(left, 5px);
+
+
+    + .form-control {
+      @include rem(padding-left, 50px);
+    }
+  }
+
+  .form-group {
+    @include rem(margin-bottom, 20px);
+  }
+
+  .submit-group {
+    @include rem(margin-top, 30px);
+  }
+
+  .input-group {
+    .form-control {
+      @include rem(padding-right, 50px);
+
+      + .input-group-addon {
+        left: auto;
+        cursor: pointer;
+
+        @include rem(right, 5px);
+      }
+    }
+  }
+
+  .hint {
+    @include rem(margin, 10px 0);
+  }
+
+  .icon--hide_password {
+    color: #3f4d60;
+  }
+
+  .btn {
+    &--flat {
+      border-radius: 0;
+      padding: 0 !important;
+
+      @include rem(margin, 15px 0 0);
+    }
+  }
+}
+
+.input-group {
+  position: relative;
+
+  &--error {
+    &:before {
+      content: '';
+      border-radius: 100px;
+      position: absolute;
+      background-color: #ff3e2e;
+      left: 0;
+
+      @include rem(width, 2px);
+      @include rem(top, 8px);
+      @include rem(bottom, 8px);
+    }
   }
 }

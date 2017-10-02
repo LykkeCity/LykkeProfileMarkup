@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lykke - anyone can trade</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/vendor/bootstrap-custom.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lte IE 9]>
+      <script type="text/javascript" src="js/vendor/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<article class="content page page_auth">
+
+  <section class="section section--padding">
+    <div class="container">
+
+        <div class="row">
+          <div class="col-md-10 automargin">
+            <div class="header__logo header_logo">
+              <a href="/">
+                <img class="header_logo__img" src="img/lykke_new.svg" height="40" alt="lykke_logo">
+              </a>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="section_header">
+                  <div class="section_title">Discover the future of markets</div>
+                  <div class="section_subtitle">You will use this login information to access all Lykke products and services</div>
+                </div>
+
+                <div class="logos">
+                  <img src="img/lykke_wallet_logo.svg" alt="lykke wallet" width="40" height="40">
+                  <img src="img/streams_logo.svg" alt="streams" width="40" height="40">
+                  <img src="img/bl_explorer_logo.svg" alt="blockchain explorer" width="40" height="40">
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <h4>Sign in</h4>
+                <form class="form form_register">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <i class="icon icon--email input-group-addon"></i>
+                      <input type="email" placeholder="E-mail address" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Wrong email format">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group--error">
+                      <i class="icon icon--lock input-group-addon"></i>
+                      <input type="password" placeholder="Password" class="form-control">
+                      <!-- TODO toggle icon classes and input type, show icon if input has value-->
+                      <i class="icon icon--show_password input-group-addon"></i>
+                      <!--<i class="icon icon--hide_password input-group-addon"></i>-->
+                    </div>
+                    <div class="label_error">The username or password you entered is incorrect</div>
+                  </div>
+                  <div class="submit-group">
+                    <button class="btn btn--primary btn-block" type="submit">Sign in</button>
+                  </div>
+                </form>
+
+                <div class="hr_or">
+                  <span>or</span>
+                </div>
+
+                <h4>Sign up</h4>
+                <form class="form form_register">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <i class="input-group-addon icon icon--email"></i>
+                      <input type="email" placeholder="E-mail address" id="subscribe-email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Wrong email format">
+                    </div>
+                  </div>
+                  <div class="submit-group">
+                    <button class="btn btn--primary btn-block" type="submit">Sign up</button>
+                  </div>
+                </form>
+
+                <div class="hint">By pressing Sign up you agree to our <a href="">Terms and Use</a> and <a href="">Privacy policy</a></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+  </section>
+
+
+</article>
+
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/fastclick.min.js"></script>
+<script src="js/functions.js"></script>
+
+<script src="js/vendor/moment.min.js"></script>
+<script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
+
+<script>
+  $('.datetimepicker').datetimepicker({
+    format: 'DD.MM.YYYY',
+    icons: {
+      time: "icon--clock",
+      date: "icon--cal",
+      up: "icon--chevron-thin-up",
+      down: "icon--chevron-thin-down",
+      previous: "icon--chevron-thin-left",
+      next: "icon--chevron-thin-right"
+    }
+  });
+</script>
+
+</body>
+</html>
