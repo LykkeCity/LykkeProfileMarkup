@@ -1,0 +1,56 @@
+.notifyjs-notify-base {
+  border-radius: $border-radius;
+  background-color: $border-alt;
+  font-weight: $fw-semi;
+  line-height: 1.67;
+  text-align: left;
+
+  @include rem(font-size, 18px);
+  @include rem(padding, 8px 40px 8px 20px);
+
+  &.notifyjs-notify-success {
+    background-color: $green;
+    color: $white;
+  }
+
+  &.notifyjs-notify-error {
+    background-color: $red;
+    color: $white;
+  }
+
+  .btn_close {
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    color: inherit;
+
+    &:hover {
+      color: inherit !important;
+      opacity: .9;
+    }
+  }
+}
+
+.notifyjs-container {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+
+.modal {
+  &--message {
+    h3 {
+      @include rem(margin-bottom, 10px)
+    }
+
+    .modal__footer {
+      text-align: right;
+
+      @include rem(padding-bottom, 20px);
+
+      .btn {
+        vertical-align: top;
+      }
+    }
+  }
+}

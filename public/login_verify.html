@@ -62,9 +62,19 @@
                   <div class="form-group">
                     <input type="text" placeholder="Code" class="form-control">
                     <button type="button" class="btn btn--flat">Resend the code</button>
+                    <!--<button type="button" class="btn btn--flat" disabled>Resend the code</button>-->
                   </div>
                   <div class="submit-group">
                     <button class="btn btn--primary btn-block" type="submit">Submit</button>
+                    <button class="btn btn--primary btn-block btn_loading" disabled type="submit">Submit</button>
+
+                    <div class="spinner_container">
+                      <div class="spinner">
+                        <div class="spinner__inside"></div>
+                      </div>
+                    </div>
+
+                    <button type="button" onclick="$.notify({title: 'Code successfully sent!'}, {className: 'success'});">show notify</button>
                   </div>
                 </form>
 
@@ -84,22 +94,30 @@
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
+<script src="js/vendor/notify.min.js"></script>
 <script src="js/functions.js"></script>
 
-<script src="js/vendor/moment.min.js"></script>
-<script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
 
 <script>
-  $('.datetimepicker').datetimepicker({
-    format: 'DD.MM.YYYY',
-    icons: {
-      time: "icon--clock",
-      date: "icon--cal",
-      up: "icon--chevron-thin-up",
-      down: "icon--chevron-thin-down",
-      previous: "icon--chevron-thin-left",
-      next: "icon--chevron-thin-right"
-    }
+  //https://notifyjs.com/
+
+  /* class names:
+  *  success
+  *  error
+  *  info
+  *  */
+
+  $.notify.defaults({
+    style: 'notify',
+    gap: 5
+  });
+
+  $.notify.addStyle('notify', {
+    html:
+    "<div class='notify_inner'>" +
+      "<div class='title' data-notify-html='title'/>" +
+      "<button type='button' class='btn_close btn btn--icon'><i class='icon icon--cancel_round'></i></button>" +
+    "</div>"
   });
 </script>
 
