@@ -357,6 +357,9 @@ textarea.form-control {
 
     img {
       border-radius: 100px;
+
+      @include rem(width, 120px);
+      @include rem(height, 120px);
     }
   }
 
@@ -453,12 +456,6 @@ textarea.form-control {
     &.btn-sm {
       @include rem(padding, 7px 24px !important);
     }
-  }
-}
-
-.fileupload__preview {
-  img {
-    width: 100%;
   }
 }
 

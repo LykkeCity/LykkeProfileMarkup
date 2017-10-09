@@ -912,10 +912,16 @@
       @include rem(width, 150px);
       @include rem(height, 150px);
       @include rem(margin-bottom, 23px);
+
+      img {
+        @include rem(width, 150px);
+        @include rem(height, 150px);
+      }
     }
 
     .user_badge__title {
       @extend .h2;
+      @include rem(margin-bottom, 10px);
     }
   }
 }
