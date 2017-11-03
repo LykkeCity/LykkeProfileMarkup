@@ -653,4 +653,37 @@ textarea.form-control {
       @include rem(bottom, 8px);
     }
   }
+
+  &.form-control {
+    display: table;
+    width: 100%;
+
+    .form-control {
+      border: 0;
+      padding: 0;
+      background: transparent;
+      height: auto;
+      margin-bottom: 0;
+    }
+
+    .input-group-field,
+    .input-group-addon {
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+      width: auto;
+      position: static;
+      padding: 0;
+
+      @include rem(line-height, 26px)
+    }
+
+    .input-group-addon {
+      width: 10px;
+    }
+
+    .input-group-field {
+      width: 90%;
+    }
+  }
 }
